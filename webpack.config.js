@@ -63,6 +63,10 @@ module.exports = function (_env, argv) {
     },
     resolve: {
       extensions: [".js", ".jsx"],
+      alias: {
+        root: __dirname,
+        src: path.resolve(__dirname, "src"),
+      },
     },
     plugins: [
       isProduction &&
